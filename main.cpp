@@ -24,7 +24,7 @@ int main(int argc, char **argv)
         //加载数据集
         std::vector<ncnn::Mat> imgs;
         std::vector<std::string> labels;
-        loadStandardDataset("/home/liu/codes/项目/facerec-gui3/data/facedb_backup",imgs,labels);
+        loadStandardDataset(inputPath,imgs,labels);
         
         //提取特征
         std::vector<std::vector<float>> features;
